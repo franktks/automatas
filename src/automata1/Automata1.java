@@ -12,21 +12,23 @@ package automata1;
 import java.util.Scanner;
 
 public class Automata1 {
-public static void main(String[] args) {
+    public static void main(String[] args) {
    
- Scanner lectura=new Scanner(System.in);
- String cadena,res;
- System.out.println("Ingrese la cadena");
- cadena=lectura.next();
- Estados2 valida=new Estados2();
- res=valida.qo(cadena, 0);
+        Scanner lectura=new Scanner(System.in);
+        String cadena,res;
+        System.out.println("Ingrese la cadena");
+        cadena=lectura.next();
+        Estados2 valida=new Estados2();
+        res=valida.qo(cadena, 0);
   
- if(res=="q3")
- {
-     valida.cValida();
- }else
-      {
-       valida.cInvalida();
-      }
+        if(res=="q3")
+        {
+            valida.cValida();
+        }else
+        {
+            valida.cInvalida();
+        }
+        
+        System.out.println("Hola mundo!!");
     }
 }
